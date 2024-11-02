@@ -1,0 +1,32 @@
+PS C:\Users\falco\Downloads\git_tutorial> cd C:\Users\falco\Downloads\git_challenge
+PS C:\Users\falco\Downloads\git_challenge> git add ..
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\falco\Downloads\git_challenge> git init
+Initialized empty Git repository in C:/Users/falco/Downloads/git_challenge/.git/
+PS C:\Users\falco\Downloads\git_challenge> git add ..
+fatal: ..: '..' is outside repository at 'C:/Users/falco/Downloads/git_challenge'
+PS C:\Users\falco\Downloads\git_challenge>
+PS C:\Users\falco\Downloads\git_challenge> git add hello_world.txt
+PS C:\Users\falco\Downloads\git_challenge> git commit -m "一回目"
+[master (root-commit) eadee0f] 一回目
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\falco\Downloads\git_challenge> git add hello_world.txt
+PS C:\Users\falco\Downloads\git_challenge> git commit -m "二回目"  
+[master cd9fa99] 二回目
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\falco\Downloads\git_challenge> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\falco\Downloads\git_challenge> git log   
+commit cd9fa999d6dc7f7b6c84a726b93dce47a59d481f (HEAD -> master)
+Author: falcon-guy <farukon-gai@ezweb.ne.jp>
+Date:   Sat Nov 2 15:29:02 2024 +0900
+
+    二回目
+
+commit eadee0fbc60bdbceea0c316628df206a052df85d
+Author: falcon-guy <farukon-gai@ezweb.ne.jp>
+Date:   Sat Nov 2 15:27:52 2024 +0900
+
+    一回目
